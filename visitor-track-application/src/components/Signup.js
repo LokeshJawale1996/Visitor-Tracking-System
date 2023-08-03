@@ -67,6 +67,17 @@ const Signup = () => {
       localStorage.setItem("signupData", JSON.stringify(formData));
 
       alert("Sign up successful! Data saved in Localstorage.");
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        dob: "",
+        role: "",
+        apartmentName: "",
+        password: "",
+        confirmPassword: "",
+      })
     } else {
       alert("Please enter valid information and ensure passwords match.");
     }
